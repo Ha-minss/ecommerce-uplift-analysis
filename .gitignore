@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+
+# Raw data
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+# Keep heavy local intermediates out by default
+data/processed/*.parquet
+data/processed/event_master.csv
+data/processed/purchase_master.csv
+data/processed/session_level_funnel.csv
+data/processed/customer_level_features.csv
+!data/processed/.gitkeep
+!data/processed/README.md
